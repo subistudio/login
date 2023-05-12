@@ -1,0 +1,39 @@
+header
+    padding: 20px 30px
+    display: flex
+    justify-content: right
+    position: relative
+    background: lightblue
+    button
+        padding: 8px 20px 
+        outline: 0
+        border:1px solid grey
+        border-radius: 10px
+        cursor: pointer
+        &:not(:last-child)
+            margin-right: 20px
+    .profileView
+        display: none
+        position: absolute
+        background: white
+        border: 1px solid grey
+        padding: 15px
+        border-radius: 10px
+        top: calc( 100% + 20px )
+        animation: scale 0.3s ease
+        p
+            white-space: pre
+main
+    padding: 50px 20px
+    .image-container
+        margin: 0 auto
+        max-width: 600px
+        width: 100%
+        padding: 10px
+        background-color: lightblue
+        border-radius: 10px
+
+        img
+            width: 100%
+            height: auto
+            object-fit: cover

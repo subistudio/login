@@ -1,0 +1,48 @@
+.login-container
+    min-height: 100%
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    .login
+        border: 1px solid grey
+        padding: 20px
+        border-radius: 15px
+        max-width: 400px
+        width: 100%
+
+        h1
+            margin-bottom: 10px
+        form > div
+            display: flex
+            flex-direction: column-reverse
+            margin-bottom: 10px
+            input
+                outline: 0
+                transition: 0.3s ease
+                border: 1.5px solid grey
+                border-radius: 5px
+                height: 35px
+                padding: 0 15px
+                &:focus:not(:valid):invalid ~ label
+                    color: red
+                &:focus:not(:valid):invalid
+                    border-color: red
+                    
+            label
+                margin-bottom: 5px
+                transition: 0.3s ease
+        form
+            & > p
+                margin-bottom: 15px
+                text-align: start
+                white-space: pre
+            [type="submit"]
+                padding: 8px 20px
+                border: 1px solid grey
+                outline: 0
+                border-radius: 5px
+                cursor: pointer
+       
+            
+        
